@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Energy Cost Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Energy Cost Calculator</h1>
+      <form>
+        <div class="input-group">
+          <label>Appliance Power Consumption (Watts)</label>
+          <input
+            type="number"
+            id="power-consumption"
+            placeholder="Enter power consumption"
+          />
+        </div>
+        <div class="input-group">
+          <label>Hours of Use Per Day</label>
+          <input
+            type="number"
+            id="hours-per-day"
+            placeholder="Enter hours of use per day"
+          />
+        </div>
+        <div class="input-group">
+          <label>Energy Rate (per kWh)</label>
+          <input
+            type="number"
+            id="energy-rate"
+            placeholder="Enter energy rate"
+          />
+        </div>
+        <button type="button" class="btn" onclick="calculateEnergyCost()">
+          Calculate Energy Cost
+        </button>
+      </form>
+      <div id="energy-cost"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
